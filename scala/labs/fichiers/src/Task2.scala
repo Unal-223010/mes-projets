@@ -5,23 +5,36 @@ import java.io.FileNotFoundException
 
 object Task2 extends App {
 
+  def deneme(url : String) : Unit ={
+    var deneme = Source.fromURL(s"$url").getLines
+  }
+
+
   def read_Url(url: String): Int = {
     var url_name = Source.fromURL(s"$url").getLines.toArray
-    var size : Int = url_name.length
+    var size: Int = url_name.length
     println(size)
     return size
   }
 
-  def short_url(url:String) : String = {
-    var url_name = Source.fromURL(s"$url").getLines.toArray
-    var first : String = ""
-    for(a<- url_name.indices)
-      for(b<- url_name(a))
-        //Devam buradan en kisa kelimeyi bulmaya calisiyorsun
-
-
-  }
   read_Url("https://marcellus.begincoding.net/101.1/francais.txt")
+  val url = "https://marcellus.begincoding.net/101.1/francais.txt"
+  val contents = io.Source.fromURL(url).getLines
+  val shortestWord = contents.minBy(_.length)
+  println(shortestWord)
+  //val longWord = contents.maxBy(_.length)
+  println(longWord)
+
+  val sayi = io.Source.fromURL(url).getLines
+  println(sayi)
+
+  val li = sayi.length
+  var comp : Int = 0
+  for ( t <- 0 to (li -1))
+    comp += 1
+  println(comp)
+
+
 }
 
 
