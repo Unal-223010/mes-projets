@@ -10,6 +10,8 @@ object Task1 extends App {
     return lines
   }
 
+  readFile("res/drawingTest.csv")
+
   try {
     //var file_exp1 = readFile("test.pdf")
     //var file_exp2 = readFile("res/test.pdf")

@@ -23,16 +23,16 @@ object Task2 extends App {
   val shortestWord = contents.minBy(_.length)
   println(shortestWord)
   //val longWord = contents.maxBy(_.length)
-  println(longWord)
+  //println(longWord)
 
   val sayi = io.Source.fromURL(url).getLines
   println(sayi)
 
   val li = sayi.length
-  var comp : Int = 0
-  for ( t <- 0 to (li -1))
-    comp += 1
-  println(comp)
+  //var comp : Int = 0
+  //for ( t <- 0 to (li -1))
+    //comp += 1
+  //println(comp)
 
 
 }
