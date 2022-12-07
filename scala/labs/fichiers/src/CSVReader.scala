@@ -5,8 +5,8 @@ import java.io.{File, FileNotFoundException, IOException}
 
 object CSVReader {
 
-	def parseFile(in: String): Array[Line] = {
-		// This vector hold the lines
+	def parseFile(in: String): Array[Line] = { // Line.scala file`daki Line class`i.
+		// This vector hold the lines .Bu vektör çizgileri tutar
 		var textLines: Array[String] = Array.empty[String]
 
 		try {
@@ -31,7 +31,14 @@ object CSVReader {
 		val lines: Array[Line] = new Array[Line](textLines.length)
 
 		// TODO: complete with your code here to fill the lines array
-
+		for ((a, b) <- textLines.zipWithIndex) {
+			val kk: Array[Int] = a.split(";").map(Integer.parseInt)
+			lines(b) = new Line(
+				new Point(kk(0), kk(1)),
+				new Point(kk(2), kk(3)),
+				new Color(kk(4), kk(5), kk(6))
+			)
+		}
 		lines
 	}
 
@@ -68,7 +75,7 @@ object CSVReader {
 	 * @return The space required to display that on screen
 	 */
 	def getDimensions(lines: Array[Line]): Dimension = {
-		// The dimension of the image, used for SVG output & the view Frame.
+		// The dimension of the image, used for SVG output & the view Frame. SVG çıktısı ve görünüm Çerçevesi için kullanılan görüntünün boyutu.
 		val imgDim = new Dimension
 
 		/**
