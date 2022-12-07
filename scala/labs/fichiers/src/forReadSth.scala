@@ -15,8 +15,8 @@ object forReadSth extends App {
    CALISMIYOR...
    */
 
-  //val readFILE = Source.fromFile("res/drawingTest.csv").getLines
-  //readFILE.foreach(println)
+  val readFILE = Source.fromFile("res/drawingTest.csv").getLines.toArray
+  readFILE.foreach(println)
 
   val url = "https://marcellus.begincoding.net/101.1/francais.txt"
   lazy val contents = io.Source.fromURL(url).getLines.toList

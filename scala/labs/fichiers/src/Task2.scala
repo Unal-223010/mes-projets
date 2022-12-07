@@ -1,5 +1,5 @@
 import scala.io.Source._
-import scala.io.Source
+import scala.io.{BufferedSource, Source}
 import sys.process._
 import java.io.FileNotFoundException
 
@@ -21,7 +21,7 @@ object Task2 extends App {
   val url = "https://marcellus.begincoding.net/101.1/francais.txt"
   val contents = io.Source.fromURL(url).getLines
   val shortestWord = contents.minBy(_.length)
-  println(shortestWord)
+
   //val longWord = contents.maxBy(_.length)
   //println(longWord)
 
@@ -33,6 +33,34 @@ object Task2 extends App {
   //for ( t <- 0 to (li -1))
     //comp += 1
   //println(comp)
+
+  val src: BufferedSource = scala.io.Source.fromURL("https://marcellus.begincoding.net/101.1/francais.txt")
+
+  var longest: String = ""
+  var shortest: String = ""
+  var mostA: String = ""
+  var mostACount: Int = 0
+  var lines: Int = 0
+
+  for (line <- src.getLines()) {
+    if (line.length > longest.length) longest = line
+    if (shortest == "" || line.length < shortest.length) shortest = line
+
+    val aCount: Int = line.count(_ == 'a')
+    if (aCount > mostACount) {
+      mostACount = aCount
+      mostA = line
+    }
+
+    lines += 1
+  }
+
+  println(s"Longest: '$longest'")
+  println(s"Shortest: '$shortest'")
+  println(s"Most A's: '$mostA'")
+
+  src.close()
+
 
 
 }
