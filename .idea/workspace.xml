@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95f25e98-1af5-407d-b2b8-2c949f39b420" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ioislemleri.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/file-class-notes.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/filecreate.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/io-notes.md" afterDir="false" />
-    </list>
+    <list default="true" id="95f25e98-1af5-407d-b2b8-2c949f39b420" name="Changes" comment="dosya create etme,silme,dizin create etme vb. islemlerini uygulandigi sc file eklendi." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,6 +87,49 @@
       <option name="presentableId" value="Default" />
       <updated>1671797222362</updated>
     </task>
+    <task id="LOCAL-00001" summary="IO islemlerle ilgili notlarin oldugu txt file eklendi.">
+      <created>1672002763708</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672002763708</updated>
+    </task>
+    <task id="LOCAL-00002" summary="IJ files added">
+      <created>1672002808064</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672002808064</updated>
+    </task>
+    <task id="LOCAL-00003" summary="IJ files added">
+      <created>1672002814276</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672002814276</updated>
+    </task>
+    <task id="LOCAL-00004" summary=" File Class ile ilgili notlar eklendi.">
+      <created>1672002887595</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672002887595</updated>
+    </task>
+    <task id="LOCAL-00005" summary="dosya create etme,silme,dizin create etme vb. islemlerini uygulandigi sc file eklendi.">
+      <created>1672002952638</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1672002952638</updated>
+    </task>
+    <task id="LOCAL-00006" summary="dosya create etme,silme,dizin create etme vb. islemlerini uygulandigi sc file eklendi.">
+      <created>1672003049229</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672003049229</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,5 +142,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="IO islemlerle ilgili notlarin oldugu txt file eklendi." />
+    <MESSAGE value="IJ files added" />
+    <MESSAGE value=" File Class ile ilgili notlar eklendi." />
+    <MESSAGE value="dosya create etme,silme,dizin create etme vb. islemlerini uygulandigi sc file eklendi." />
+    <option name="LAST_COMMIT_MESSAGE" value="dosya create etme,silme,dizin create etme vb. islemlerini uygulandigi sc file eklendi." />
   </component>
 </project>
